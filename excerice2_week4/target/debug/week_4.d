@@ -1,0 +1,1 @@
+/mnt/c/Users/AYO/Documents/csc308/week_4/target/debug/week_4: /mnt/c/Users/AYO/Documents/csc308/week_4/src/main.rs
