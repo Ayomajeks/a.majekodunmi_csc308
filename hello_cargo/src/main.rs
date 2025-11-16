@@ -1,17 +1,10 @@
 fn main() {
-    let mut message: String = String::from("Hello");
+    let list: Vec<i32> = vec![1,2,3];
+    println!("Before defining closure: {list:?}");
 
-    show_message(&message);
-    add_note(&mut message);
+    let only_borrows= || println!("From closure:  {list:?}");
 
-    println!("Final message: {}", message);
-    
-}
-
-fn show_message(msg: &String) {
-    println!("Current message: {}", msg);
-}
-
-fn add_note(msg: &mut String) {
-    msg.push_str(", world!");
+    println!("Before calling closure: {list:?}");
+    only_borrows();
+    println!("After calling closure: {list:?}");
 }
